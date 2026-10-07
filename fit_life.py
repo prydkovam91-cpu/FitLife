@@ -35,7 +35,7 @@ water_l = water_ml / ML_IN_LITER   # переводим в литры
 
 
 # 4. Вывод красивого результата
-print(f"Добрый день, {user_name.capitalize()}!", end=" ")
+print(f"Добрый день, {user_name.capitalize()}!")
 print(f"Вам {user_age} лет.")
 # имя с заглавной буквы
 print(f"Ваш Индекс Массы Тела: {bmi:.1f}")
