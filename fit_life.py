@@ -34,10 +34,9 @@ water_ml = user_weight * WATER_PER_KG
 water_l = water_ml / ML_IN_LITER   # переводим в литры
 
 
+name_formatted = user_name.capitalize()  # имя с заглавной буквы
 # 4. Вывод красивого результата
-print(f"Добрый день, {user_name.capitalize()}!")
-print(f"Вам {user_age} лет.")
-# имя с заглавной буквы
+print(f"Добрый день, {name_formatted}! Вам {user_age} лет.")
 print(f"Ваш Индекс Массы Тела: {bmi:.1f}")
 print(f"Рекомендуемая норма воды:  {water_l:.1f} л в день.")
 # Округляем значения.
