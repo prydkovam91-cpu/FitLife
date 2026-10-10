@@ -20,7 +20,7 @@ user_weight = float(input("Какой у Вас вес (в кг)? "))
 while True:
     height_input = input("Какой у Вас рост (в метрах, например 1.60)? ")
     # Заменяем запятую на точку — так поддержим оба формата ввода
-    height_input_fixed = height_input.replace(',', '.')
+    height_input_fixed = height_input.replace(",", ".")
     try:
         user_height = float(height_input_fixed)
         break  # если всё хорошо, выходим из цикла
@@ -36,8 +36,10 @@ water_l = water_ml / ML_IN_LITER   # переводим в литры
 
 name_formatted = user_name.capitalize()  # имя с заглавной буквы
 # 4. Вывод красивого результата
-print(f"Добрый день, {name_formatted}! Вам {user_age} лет.")
-print(f"Ваш Индекс Массы Тела: {bmi:.1f}")
-print(f"Рекомендуемая норма воды:  {water_l:.1f} л в день.")
-# Округляем значения.
-print("Расчёт окончен. Будьте здоровы!")
+print(
+    f"Добрый день, {name_formatted}! Вам {user_age} лет.",
+    f"Ваш Индекс Массы Тела: {bmi:.1f}",
+    f"Рекомендуемая норма воды:  {water_l:.1f} л в день.",
+    "Расчёт окончен. Будьте здоровы!",
+    sep="\n"
+)
